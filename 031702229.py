@@ -1247,6 +1247,10 @@ def trandict(string1):
     string2=re.sub('\.','',string2)
     string2=re.sub('(\d\d\d\d\d\d+)','',string2)
     #print(string2)
+    try:
+        twowords=string2[0:2]
+    except AttributeError:
+        print('没有输入地址')
     listdata=['北京','天津','上海','重庆']
     result=[]
     twowords=string2[0:2]
