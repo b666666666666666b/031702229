@@ -1,8 +1,5 @@
-import sys
 import re
 import json
-reload(sys)
-sys.setdefaultencoding('utf-8')
 addr = [
   {
     '北京市': [
@@ -264,46 +261,46 @@ addr = [
         '上海市': ['黄浦区', '徐汇区', '长宁区', '静安区', '普陀区', '闸北区', '虹口区', '杨浦区', '闵行区', '宝山区', '嘉定区', '浦东新区', '金山区', '松江区', '青浦区', '奉贤区', '崇明区']
       }
     ]
-  },
+  }, 
   {
     '江苏省': [
-      {
+      { 
         '南京市': ['玄武区', '秦淮区', '建邺区', '鼓楼区', '浦口区', '栖霞区', '雨花台区', '江宁区', '六合区', '溧水区', '高淳区']
       },
-      {
+      { 
         '无锡市': ['梁溪区', '锡山区', '惠山区', '滨湖区', '新吴区', '江阴市', '宜兴市']
       },
-      {
+      { 
         '徐州市': ['鼓楼区', '云龙区', '铜山区', '贾汪区', '泉山区', '丰县', '沛县', '睢宁县', '新沂市', '邳州市']
       },
-      {
+      { 
         '常州市': ['天宁区', '钟楼区', '新北区', '武进区', '金坛区', '溧阳市']
       },
-      {
+      { 
         '苏州市': ['姑苏区', '虎丘区', '吴中区', '相城区', '吴江区', '常熟市', '张家港市', '昆山市', '太仓市']
       },
-      {
+      { 
         '南通市': ['崇川区', '港闸区', '通州区', '海安县', '如东县', '启东市', '如皋市', '海门市']
       },
-      {
+      { 
         '连云港市': ['连云区', '海州区', '赣榆区', '东海县', '灌云县', '灌南县']
       },
-      {
+      { 
         '淮安市': ['淮安区', '淮阴区', '清江浦区', '洪泽区', '涟水县', '盱眙县', '金湖县']
       },
-      {
+      { 
         '盐城市': ['亭湖区', '盐都区', '大丰区', '响水县', '滨海县', '阜宁县', '射阳县', '建湖县', '东台市']
       },
-      {
+      { 
         '扬州市': ['广陵区', '邗江区', '江都区', '宝应县', '仪征市', '高邮市']
       },
-      {
+      { 
         '镇江市': ['京口区', '润州区', '丹徒区', '丹阳市', '扬中市', '句容市']
       },
-      {
+      { 
         '泰州市': ['海陵区', '高港区', '姜堰区', '兴化市', '靖江市', '泰兴市']
       },
-      {
+      { 
         '宿迁市': ['宿城区', '宿豫区', '沭阳县', '泗阳县', '泗洪县']
       }
     ]
@@ -619,16 +616,16 @@ addr = [
       {
         '恩施州': ['恩施市', '利川市', '建始县', '巴东县', '宣恩县', '咸丰县', '来凤县', '鹤峰县']
       },
-      {
+      { 
         '仙桃市': ['仙桃市']
       },
-      {
+      { 
         '潜江市': ['潜江市']
       },
-      {
+      { 
         '天门市': ['天门市']
       },
-      {
+      { 
         '神农架林区': ['神农架林区']
       }
     ]
@@ -638,46 +635,46 @@ addr = [
       {
         '长沙市': ['芙蓉区', '天心区', '岳麓区', '开福区', '雨花区', '望城区', '长沙县', '宁乡县', '浏阳市']
       },
-      {
+      { 
         '株洲市': ['荷塘区', '芦淞区', '石峰区', '天元区', '株洲县', '攸县', '茶陵县', '炎陵县', '醴陵市']
       },
-      {
+      { 
         '湘潭市': ['雨湖区', '岳塘区', '湘潭县', '湘乡市', '韶山市']
       },
-      {
+      { 
         '衡阳市': ['珠晖区', '雁峰区', '石鼓区', '蒸湘区', '南岳区', '衡阳县', '衡南县', '衡山县', '衡东县', '祁东县', '耒阳市', '常宁市']
       },
-      {
+      { 
         '邵阳市': ['双清区', '大祥区', '北塔区', '邵东县', '新邵县', '邵阳县', '隆回县', '洞口县', '绥宁县', '新宁县', '城步县', '武冈市']
       },
-      {
+      { 
         '岳阳市': ['岳阳楼区', '云溪区', '君山区', '岳阳县', '华容县', '湘阴县', '平江县', '汨罗市', '临湘市']
       },
-      {
+      { 
         '常德市': ['武陵区', '鼎城区', '安乡县', '汉寿县', '澧县', '临澧县', '桃源县', '石门县', '津市市']
       },
-      {
+      { 
         '张家界市': ['永定区', '武陵源区', '慈利县', '桑植县']
       },
-      {
+      { 
         '益阳市': ['资阳区', '赫山区', '南县', '桃江县', '安化县', '沅江市']
       },
-      {
+      { 
         '郴州市': ['北湖区', '苏仙区', '桂阳县', '宜章县', '永兴县', '嘉禾县', '临武县', '汝城县', '桂东县', '安仁县', '资兴市']
       },
-      {
+      { 
         '永州市': ['零陵区', '冷水滩区', '祁阳县', '东安县', '双牌县', '道县', '江永县', '宁远县', '蓝山县', '新田县', '江华县']
       },
-      {
+      { 
         '怀化市': ['鹤城区', '中方县', '沅陵县', '辰溪县', '溆浦县', '会同县', '麻阳县', '新晃县', '芷江县', '靖州县', '通道县', '洪江市']
       },
-      {
+      { 
         '娄底市': ['娄星区', '双峰县', '新化县', '冷水江市', '涟源市']
       },
-      {
+      { 
         '湘西州': ['吉首市', '泸溪县', '凤凰县', '花垣县', '保靖县', '古丈县', '永顺县', '龙山县']
       }
-    ]
+    ] 
   },
   {
     '广东省 ': [
@@ -1236,92 +1233,98 @@ addr = [
     ]
   }
 ]
-
-
 def trandict(string1):
-  type1 = string1[0]
-  num = re.search('\d\d\d+', string1)
-  name = re.search('!(.*?),', string1)
-  name = re.sub('!', '', name.group())
-  name = re.sub(',', '', name)
-  dic = {}
-  dic['姓名'] = name
-  dic['手机'] = num.group()
-  # print(dic)
-  string2 = re.sub('(.*?),', '', string1)
-  string2 = re.sub('\.', '', string2)
-  string2 = re.sub('(\d\d\d\d\d\d+)', '', string2)
-  # print(string2)
-  listdata = ['北京', '天津', '上海', '重庆']
-  result = []
-  twowords = string2[0:2]
-  if (twowords in listdata):
-    result.append(string2[0:2])
-    result.append(string2[0:2] + '市')
-  else:
-    str1 = ''
-    for i in addr:
-      add1 = i
-      keys = add1.keys()
-      str1 = str1 + str(keys)
-    keyword = re.findall('\'(.*?)\'', str1)
-    for i in range(0, 30):
-      fullword = keyword[i]
-      twoword = fullword[0:2]
-      if twoword == twowords:
-        fullword = re.sub(' ', '', fullword)
-        result.append(fullword)
-        string2 = re.sub(fullword, '', string2)
-        twowords = '^' + twowords
-        string2 = re.sub(twowords, '', string2)
-        a1 = addr[i].values()
-        a2 = list(a1)
-        a3 = a2[0]
-        for j in a3:
-          a4 = j
-          a5 = list(a4.keys())
-          a6 = a5[0]
-          twowords = a6[0:2]
-          if twowords == string2[0:2]:
-            result.append(a6)
-            string2 = re.sub(a6, '', string2)
-            twowords = '^' + twowords
-            string2 = re.sub(twowords, '', string2)
-  xian = re.match('.*[区|县|市]', string2)
-  if xian == None:
-    result.append('')
-  else:
-    result.append(xian.group())
-    string2 = re.sub('.*[区|县|市]', '', string2)
-
-  zhen = re.match('.*[街道|镇|乡]', string2)
-  if zhen == None:
-    result.append('')
-  else:
-    result.append(zhen.group())
-    string2 = re.sub('.*[街道|镇|乡]', '', string2)
-
-  if type1 == '2' or type1 == '3':
-    lu = re.match('.*路', string2)
-    if lu == None:
-      result.append('')
+    type1=string1[0]
+    num=re.search('\d\d\d\d\d+',string1)
+    name=re.search('!(.*?),',string1)
+    name=re.sub('!','',name.group())
+    name=re.sub(',','',name)
+    dic={}
+    dic['姓名']=name
+    dic['手机']=num.group()
+    #print(dic)
+    string2=re.sub('(.*?),','',string1)
+    string2=re.sub('\.','',string2)
+    string2=re.sub('(\d\d\d\d\d\d+)','',string2)
+    #print(string2)
+    listdata=['北京','天津','上海','重庆']
+    result=[]
+    twowords=string2[0:2]
+    if(twowords in listdata):
+        result.append(string2[0:2])
+        result.append(string2[0:2]+'市')
+        asd=string2[0:2]
+        string2=re.sub(asd+'市','',string2)
+        string2=re.sub(asd,'',string2)
     else:
-      result.append(lu.group())
-      string2 = re.sub('.*路', '', string2)
-
-    hao = re.match('.*号', string2)
-    if hao == None:
-      result.append('')
+        str1=''
+        for i in addr:
+            add1=i
+            keys=add1.keys()
+            str1=str1+str(keys)
+        keyword=re.findall('\'(.*?)\'',str1)
+        for i in range(0,30):
+            fullword=keyword[i]
+            twoword=fullword[0:2]
+            if twoword==twowords:
+                fullword=re.sub(' ','',fullword)
+                result.append(fullword)
+                if fullword in string2:
+                    string2=re.sub(fullword,'',string2)
+                else:
+                    twowords='^'+twowords
+                    string2=re.sub(twowords,'',string2)
+                a1=addr[i].values()
+                a2=list(a1)
+                a3=a2[0]
+                for j in a3:
+                    a4=j
+                    a5=list(a4.keys())
+                    a6=a5[0]
+                    twowords=a6[0:2]
+                    if twowords==string2[0:2]:
+                        result.append(a6)
+                        if a6 in string2:
+                            string2=re.sub(a6,'',string2)
+                        else:
+                            twowords='^'+twowords
+                            string2=re.sub(twowords,'',string2)
+    xian=re.match('.{1,5}[区|县|市]',string2)
+    if xian == None:
+        result.append('')
     else:
-      result.append(hao.group())
-      string2 = re.sub('.*号', '', string2)
+        result.append(xian.group())
+        string3=re.search('.{1,5}[区|县|市]',string2)
+        string2=re.sub(string3.group(),'',string2)
+        
+    zhen=re.match('.*?[道|镇|乡]',string2)
+    if zhen == None:
+        result.append('')
+    else:
+        result.append(zhen.group())
+        string3=re.search('.*?[道|镇|乡]',string2)
+        string2=re.sub(string3.group(),'',string2)
 
-  result.append(string2)
-  dic['地址'] = result
-  return dic
+    if type1 == '2' or type1 == '3':
+        lu=re.match('.*?[街|路]',string2)
+        if lu == None:
+            result.append('')
+        else:
+            result.append(lu.group())
+            string2=re.sub('.*?[街|路]','',string2)
+           
+        hao=re.match('.*?号',string2)
+        if hao == None:
+            result.append('')
+        else:
+            result.append(hao.group())
+            string2=re.sub('.*?号','',string2)
 
+    result.append(string2)
+    dic['地址']=result
+    return dic
 
-stringx = input()
-dic1 = trandict(stringx)
-json1 = json.dumps(dic1, ensure_ascii=False)
+stringx=input()
+dic1=trandict(stringx)
+json1=json.dumps(dic1,ensure_ascii=False)
 print(json1)
